@@ -21,7 +21,7 @@ urlpatterns = [
 
     # Если встретили URL = '', то идем в posts/urls.py
     # и обрабатываем этот запрос там
-    path('', include('posts.urls')),
+    path('', include('posts.urls', namespace='posts')),
 
     path('admin/', admin.site.urls),
 ]
